@@ -1,0 +1,76 @@
+<html>
+  <head>
+     <title> Happy Father's Day </title>
+  </head>
+
+
+
+<style>
+head{
+text-align:center;
+  color:#ff03af;
+}
+body{
+  text-align:center;
+  background-color:pink;
+  color:#ff03af;
+}
+#Title{
+  font-variant:small-caps;
+  font-size:50px;
+  color:#ff03af;
+}
+#start{
+  font-size:20px;
+}
+#note{
+  font-size:17px;
+}
+#close{
+  font-size:20px;
+}
+#name{
+  font-size:25px;
+}
+#hearts{
+  height:60px
+}
+#pic{
+height:650px;
+}
+button{
+height:55px;
+width:55px;
+border-radius:30px;
+background-color:#ff03af;
+color:white;
+border-color:black;
+}
+</style>
+  <body>
+<h1 id="Title">Happy Father's Day</h1>
+    <p id="date"> Sunday, June 20 </p>
+    <img id="pic" src="start.jpg">
+    <audio id="audio"src="memories.mp3"></audio>
+<div>
+<button onclick="Image()">Switch</button>
+</div>
+    <p id="start">Dear Daddy,</p>
+    <p id="note"> You are a wonderful part of my life I don't know what to do if it wern't for you, for example: if it was not for you I would most likely still be fearing rollercoasters, yes Buaba also convinces me to but it was mostly you because I knew you woudn't let any harm come to me.I love you your funny, smart, loving,and frankly a bit grumpy but I love you for who you are. You are there when I need you, there is nothing more a daughter could ask for you are the best dad that has ever walked the earth.
+    </p>
+    <p id="close"> Love, </p>
+    <p id="name"> Mehak </p>
+    <img id="hearts" src="http://pngimg.com/uploads/heart/heart_PNG51342.png">
+         <h1 id="love"> I Love You </h1>
+  </body>
+<script>
+var a =["A.jpg","B.jpg","C.jpg","D.jpg","E.jpg","F.jpg","G.jpg","H.jpg","I.jpg","J.jpg","K.jpg","L.jpg","M.jpg","N.jpg","O.jpg","P.jpg","Q.jpg","R.jpg","X.jpg","Y.jpg","Z.jpg","one.jpg","two.jpg","Three.jpg","four.jpg","five.jpg","six.jpg","seven.jpg","eight.jpg","nine.jpg","ten.jpg","eleven.jpg","twelve.jpg","thirteen.jpg","end.jpg"];
+var slideshow=0;
+function Image()
+{
+document.getElementById("pic").src =a[slideshow];
+slideshow++;
+document.getElementById("audio").play();
+}
+</script>
+</html>
